@@ -1,0 +1,8 @@
+{
+  "appId": "org.sakaiproject.mobile",
+  "appName": "sakai-mobile",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

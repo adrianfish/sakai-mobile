@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">sakai-mobile</string>
+    <string name="title_activity_main">sakai-mobile</string>
+    <string name="package_name">org.sakaiproject.mobile</string>
+    <string name="custom_url_scheme">org.sakaiproject.mobile</string>
+</resources>

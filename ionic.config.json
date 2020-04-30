@@ -1,0 +1,7 @@
+{
+  "name": "sakai-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
