@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,27 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Login</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <form (ngSubmit)="sakaiService.login()">
+    <ion-item>
+      <ion-label position="stacked">Url:<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type="text" [(ngModel)]="sakaiService.url" name="url"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Username:<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type="text" [(ngModel)]="sakaiService.username" name="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password:<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type="password" [(ngModel)]="sakaiService.password" name="password"></ion-input>
+    </ion-item>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Login</ion-button>
+    </div>
+    <div>{{sakaiService.loginResponse}}</div>
+  </form>
 </ion-content>
